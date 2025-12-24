@@ -30,7 +30,7 @@ void MainWindow::setupUi() {
     new QListWidgetItem("Test", sidebar); // Текстовый элемент
 
     // Нижний элемент (Настройки) - можно реализовать через Spacer или отдельный виджет
-    sidebar->addItem(new QListWidgetItem(QIcon(":/icons/icons/settings.svg"), "Настройки"));
+    sidebar->addItem(new QListWidgetItem(QIcon(":/icons/settings.svg"), "Настройки"));
 
     // 2. Stacked Content
     stack = new QStackedWidget();
