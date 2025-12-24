@@ -1,14 +1,14 @@
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
-
+#pragma once
 #include <QMainWindow>
+#include <QStackedWidget>
+#include <QListWidget>
 
-class MainWindow : public QMainWindow
-{
+class MainWindow : public QMainWindow {
     Q_OBJECT
-
 public:
     MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
+private:
+    QListWidget *sidebar;
+    QStackedWidget *stack;
+    void setupUi();
 };
-#endif // MAINWINDOW_H

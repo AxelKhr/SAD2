@@ -9,6 +9,7 @@ qt_add_executable(SAD2
     WIN32 MACOSX_BUNDLE
     src/main.cpp
     src/mainwindow/mainwindow.cpp src/mainwindow/mainwindow.h
+    resources/resources.qrc
 )
 
 target_link_libraries(SAD2
